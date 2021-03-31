@@ -46,7 +46,7 @@ create table announcements(
     description text not null,
     created timestamp not null,
     status boolean not null,
-    photo_id int references photos(id) unique not null,
+    photo_id int references photos(id) unique,
     car_id int references cars(id) unique not null,
     user_id int references users(id) not null
 );
